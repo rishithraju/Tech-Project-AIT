@@ -18,6 +18,10 @@ body {
     font-size: 1.5em; 
 }
 
+.heading2{
+    text-align: center;
+}
+
 .icons {
     display: flex;
     gap: 20px;
