@@ -82,6 +82,7 @@ body {
 .hero-image {
     max-width: 40%;
     height: auto;
+    cursor: pointer;
 }
 
 .price {
@@ -102,7 +103,7 @@ body {
 }
 
 .shop-now {
-    background-color: red; /* Or your desired color */
+    background-color: red; 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -110,7 +111,7 @@ body {
     cursor: pointer;
 }
 
-/* Featured and Top Products sections - adjust as needed */
+
 .featured-products, .top-products {
     padding: 20px;
     background-color: #111;
@@ -332,7 +333,7 @@ body {
         width:200px;
         background-color: rgba(61, 58, 56, 0.171);
     }
-    /* justify-self: center; */         
+             
 }
 .TPimgdiv{
     text-align: center;
