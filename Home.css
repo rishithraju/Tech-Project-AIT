@@ -392,19 +392,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* align-self: center; */
-    /* justify-self: center; */
+    
 }
-/* .b4lastaside,.fa-arrow-right{
-    position:relative;
-    /* top:270px;  */
-    /* justify-self: center; */
-    /* place-self: center; */
-/* } */ 
+
 .b4divlastsub{
     text-align: center;
-    /* justify-self: center; */
-    /* place-self: center; */
 }
 .heading4{
     text-align: center;
@@ -462,9 +454,9 @@ body {
 }
 
 .advantage i {
-    font-size: 3em; /* Larger icons */
+    font-size: 3em; 
     margin-bottom: 15px;
-    color: red; /*Example Icon color*/
+    color: red; 
 }
 
 .advantage h3 {
@@ -472,58 +464,57 @@ body {
 }
 
 .advantage p {
-    color: #aaa; /* Slightly lighter text for descriptions */
+    color: #aaa; 
 }
 
-/*Footer*/
-/* In your style.css */
+
 footer {
     background-color: #111;
     padding: 20px;
-    color: #eee; /* Slightly lighter text for better contrast */
+    color: #eee; 
 }
 
 .footer-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-bottom: 20px; /* Space between content and bottom footer */
-    border-bottom: 1px solid #333; /* Separator line */
+    padding-bottom: 20px; 
+    border-bottom: 1px solid #333; 
 }
 
 .footer-section {
-    flex: 1 1 200px; /* Minimum 200px width, will grow or shrink */
+    flex: 1 1 200px; 
     margin: 10px;
-    text-align: left; /* Align text to the left within each section */
+    text-align: left; 
 }
 
 .footer-section h3 {
     margin-bottom: 10px;
-    color: #fff; /* White heading */
+    color: #fff; /
 }
 
 .footer-section ul {
-    list-style: none; /* Remove bullet points */
+    list-style: none; 
     padding: 0;
     margin: 0;
 }
 
 .footer-section li {
-    margin-bottom: 5px; /* Spacing between list items */
+    margin-bottom: 5px; 
 }
 
 .footer-section a {
-    color: #aaa; /* Lighter link color */
-    text-decoration: none; /* Remove underlines */
-    transition: color 0.3s; /* Smooth color transition on hover */
+    color: #aaa; 
+    text-decoration: none; 
+    transition: color 0.3s; 
 }
 
 .footer-section a:hover {
-    color: #fff; /* White on hover */
+    color: #fff; 
 }
 
 .footer-section input[type="email"] {
-    width: calc(100% - 22px); /* Account for padding and border */
+    width: calc(100% - 22px); 
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #333;
