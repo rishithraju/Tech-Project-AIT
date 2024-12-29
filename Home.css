@@ -1,0 +1,563 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    color: white;
+    background-color: #000;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+}
+
+.heading {
+    font-size: 1.5em; 
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.user-icon {
+    position: relative;
+}
+
+.user-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 200px;
+    text-align: left;
+}
+
+.user-icon:hover .user-dropdown {
+    display: block;
+}
+
+.signup-button {
+    display: block;
+    margin: 10px 0;
+    padding: 8px 15px;
+    background-color: #4CAF50; /* Example color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    background-color: #222;
+    min-height: 400px; /* Important for visible background */
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.hero-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero-description {
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    max-width: 40%;
+    height: auto;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.discounted-price {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.shop-now {
+    background-color: red; /* Or your desired color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Featured and Top Products sections - adjust as needed */
+.featured-products, .top-products {
+    padding: 20px;
+    background-color: #111;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.top-products-filter {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.top-products-filter button {
+    background-color: #333; /* Slightly lighter than the section background */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+.product {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.heading3{
+    text-align: center;
+    margin: 75px;
+    color:lightgrey;
+}
+
+
+.TPbutton1,.TPbutton2,.TPbutton3,.TPbutton4,.TPbutton5{
+    border:none;
+    color: lightgrey;
+    font-size: 20px;
+    background-color:rgb(31, 26, 26);
+    padding:5px 10px 5px 10px;
+}
+.TPbutton1{
+    background-color:red;
+    color:white;
+    border-radius:2px;
+    padding:5px 10px 5px 10px;
+    cursor: pointer;
+}
+.TPbutton2:hover,.TPbutton3:hover,.TPbutton4:hover,.TPbutton5:hover{ 
+    background-color:red;
+    color:white;
+    transition-delay:5ms;
+    border-radius:2px;
+    cursor:pointer;
+}
+
+.body2flex {
+    display: flex;
+    color: lightgrey;
+}
+
+.FPimg1{
+    height: 100px;
+    width:100px;
+    cursor:pointer;
+}
+.FPimg2{
+    height: 175px;
+    width: 185px;
+    position: relative;
+    right: 16px;
+    cursor:pointer;
+}
+.FPimg3{
+    height:250px;
+    width:250px;
+    position: relative;
+    right: 20px;
+    cursor:pointer;
+} 
+.FPimg4{
+    height: 173px;
+    width: 181px;
+    position: relative;
+    right: 17px;
+    cursor:pointer;
+}  
+.FPimg5{
+    height: 100px;
+    width:100px;
+    cursor:pointer;
+} 
+.FP1{
+    position: relative;
+    left:60px;
+    top: 80px;
+    width: 10%;
+    top:100px;
+    cursor:pointer;
+} 
+.FP2{
+    position: relative;
+    left:140px;
+    height: 300px;
+    top: 65px;
+    font-size:large;
+    width: 15%;
+    cursor:pointer;
+}
+.FP3{
+    position: relative;
+    left:226px;
+    height: 400px;
+    font-size:x-large;
+    cursor:pointer;
+}
+.FP4{
+    position: relative;
+    left:290px;
+    height: 300px;
+    top: 65px;
+    font-size:large;
+    width: 15%;
+    cursor:pointer;
+}
+.FP5{
+    position: relative;
+    left:360px;
+    top:80px;
+    width: 10%;
+    top:100px;
+    cursor:pointer;
+}
+.JBL1,.JBL2,.JBL3,.JBL4,.JBL5{
+    display:flex;  
+ }
+.JBL1discountprice{
+    margin:7px 5px 7px 7px;
+    font-size: 18px;
+}
+.JBL1price{
+    font-size: 15px;
+    margin:9px 8px 8px 5px;
+    text-decoration: line-through;
+    color:rgb(113, 116, 106);
+    font-weight: bold;
+}
+.JBL2discountprice{
+    margin:7px 5px 7px 7px;
+    font-size: 25px;
+}
+.JBL2price{
+    font-size: 20px;
+    margin:9px 8px 8px 5px;
+    text-decoration: line-through;
+    color:rgb(113, 116, 106);
+    font-weight: bold;
+}
+.JBL3discountprice{
+    margin:7px 5px 7px 7px;
+    font-size: 40px;
+}
+.JBL3price{
+    font-size: 33px;
+    margin:14px 8px 8px 5px;
+    text-decoration: line-through;
+    color:rgb(113, 116, 106);
+    font-weight: bold;
+}
+.JBL4discountprice{
+    margin:7px 5px 7px 7px;
+    font-size: 25px;
+}
+.JBL4price{
+    font-size: 20px;
+    margin:9px 8px 8px 5px;
+    text-decoration: line-through;
+    color:rgb(113, 116, 106);
+    font-weight: bold;
+}
+.JBL5discountprice{
+    margin:7px 5px 7px 7px;
+    font-size: 18px;
+}
+.JBL5price{
+    font-size: 15px;
+    margin:9px 8px 8px 5px;
+    text-decoration: line-through;
+    color:rgb(113, 116, 106);
+    font-weight: bold;
+}
+
+
+.body4{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.b4div1{
+    border: 2px solid gray;
+    margin:5px;
+    padding:5px;
+    cursor: pointer;
+
+    .TPimg1{
+        height:200px;
+        width:200px;
+        background-color: rgba(61, 58, 56, 0.171);
+    }
+    /* justify-self: center; */         
+}
+.TPimgdiv{
+    text-align: center;
+    width:305px;
+    background-color: rgba(219, 207, 199, 0.171);
+}
+.fa-star{
+    color:red;
+    font-size: 12px;
+}
+.TP1pricediv{
+    display: flex;
+}
+.TP1discountprice{
+    margin:7px 5px 7px 7px;
+    font-size: 25px;
+    color:lightgray
+}
+.TP1price{
+    font-size: 20px;
+    margin:9px 8px 8px 5px;
+    text-decoration: line-through;
+    color:rgb(113, 116, 106);
+    font-weight: bold;
+}
+.TP1heading{
+    font-size: 30px;
+    color: lightgray;
+}
+.TP1aside{
+    color:rgb(113, 116, 106);
+    font-size: 25px;
+}
+.TPCart1{
+    color: lightgray;
+    background-color: red;
+    padding: 5px;
+    width: 271px;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.TPCartDiv1{
+     text-align: center;
+}
+.TPcontentdiv{
+    margin:15px;
+}
+.b4divlast{
+    font-size: 30px;
+    text-align:center;
+    color: lightgray;
+    border: 2px solid gray;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-self: center; */
+    /* justify-self: center; */
+}
+/* .b4lastaside,.fa-arrow-right{
+    position:relative;
+    /* top:270px;  */
+    /* justify-self: center; */
+    /* place-self: center; */
+/* } */ 
+.b4divlastsub{
+    text-align: center;
+    /* justify-self: center; */
+    /* place-self: center; */
+}
+.heading4{
+    text-align: center;
+    font-size: 35px;
+    color:lightgray;
+}
+/* Our Advantages */
+.our-advantages {
+    padding: 20px;
+    background-color: #222;
+    text-align:center;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.advantage i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+.our-advantages {
+    padding: 40px; /* Increased padding */
+    background-color: #222;
+}
+
+.our-advantages h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 30px; /* Increased margin */
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Increased gap */
+}
+
+.advantage {
+    background-color: #111; /* Slightly darker background for advantage boxes */
+    padding: 30px; /* Increased padding */
+    border-radius: 8px; /* Slightly more rounded corners */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.advantage:hover {
+    transform: translateY(-5px); /* Move up slightly on hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Add a more pronounced shadow */
+}
+
+.advantage i {
+    font-size: 3em; /* Larger icons */
+    margin-bottom: 15px;
+    color: red; /*Example Icon color*/
+}
+
+.advantage h3 {
+    margin-bottom: 10px;
+}
+
+.advantage p {
+    color: #aaa; /* Slightly lighter text for descriptions */
+}
+
+/*Footer*/
+/* In your style.css */
+footer {
+    background-color: #111;
+    padding: 20px;
+    color: #eee; /* Slightly lighter text for better contrast */
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 20px; /* Space between content and bottom footer */
+    border-bottom: 1px solid #333; /* Separator line */
+}
+
+.footer-section {
+    flex: 1 1 200px; /* Minimum 200px width, will grow or shrink */
+    margin: 10px;
+    text-align: left; /* Align text to the left within each section */
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    color: #fff; /* White heading */
+}
+
+.footer-section ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section li {
+    margin-bottom: 5px; /* Spacing between list items */
+}
+
+.footer-section a {
+    color: #aaa; /* Lighter link color */
+    text-decoration: none; /* Remove underlines */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.footer-section a:hover {
+    color: #fff; /* White on hover */
+}
+
+.footer-section input[type="email"] {
+    width: calc(100% - 22px); /* Account for padding and border */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+    background-color: #222;
+    color: #eee;
+    border-radius: 5px;
+}
+
+.footer-section button {
+    background-color: red;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bottom-footer {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #aaa;
+    margin: 0 5px;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}

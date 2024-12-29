@@ -1,0 +1,484 @@
+/* 
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #111;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+}
+
+.product-details {
+    display: flex;
+    gap: 2rem;
+}
+
+.product-image img {
+    max-width: 300px;
+}
+.image-gallery{
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+.image-gallery img{
+    width: 80px;
+    border: 1px solid white;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.related-products {
+    margin-top: 2rem;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.product {
+    border: 1px solid #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #f00;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+/* Advantages Section Styles 
+.advantages {
+    margin-top: 2rem;
+}
+
+.advantages-list {
+    display: flex; 
+    justify-content: space-around; 
+    text-align: center;
+}
+
+.advantage {
+    flex: 1; 
+    padding: 1rem;
+    border: 1px solid #333;
+}
+
+.advantage h3 {
+    margin-top: 0; /* Remove default top margin for h3 */
+}
+ 
+/*
+.product h3, .product .price{
+    margin: 0;
+}
+.advantages-list{
+    padding: 1rem;
+}
+    */
+
+
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+          background-color: rgb(31, 26, 26);
+    }
+    .Top{
+            display: flex;
+            margin: 0px 2px 50px 1px;
+            background-color: #463f3f;
+            position: sticky;
+            top: 0px;
+            z-index: 10000;
+            height: 75px;
+    }
+    .heading{
+           color:lightgrey;
+           font-size:40px;
+           margin:20px;
+    }
+    .icons{
+           display: flex;
+           position:relative;
+           left:850px;
+           top:32px;
+           color:lightgrey;
+        }
+    .search{
+           position:relative;
+           left:90px;
+           font-size: 20px;  
+           height: 20px;
+           cursor: pointer;  
+    }
+    .cart{
+        position: relative;
+        left: 140px;
+        font-size: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+    .cartcount{
+        background-color: red;
+        border-radius: 100%;
+        padding: 3px;
+        font-size: 13px;
+        position: relative;
+        bottom: 9px;
+    }
+    .user{
+        position: relative;
+        left: 190px;
+        font-size: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+     .hide1{
+       visibility:hidden;
+       position: absolute;
+       top: 21px;
+       z-index: 1000;
+       right: 0px;
+       width: 223px; 
+       border: 2px solid gray;  
+    }
+    .user:hover  .hide1 {
+        opacity: 1;
+        visibility: visible; 
+    }  
+    .PDdiv1 img{
+        height: 130px;
+        width: 130px;
+        margin: 20px;
+        border: 2px solid gray;
+        padding: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .PDdiv1 img:first-child{
+        border: 2px solid rgb(255, 253, 253);
+    }
+     .ProductDetails{
+        display: flex;
+     }
+     .PDMainImg{
+        width: 650px;
+        height: 600px;
+        margin: 30px;
+        border: none;
+     }
+    .PDdiv3{
+        margin:20px;
+        padding: 60px;
+        color:lightgrey;
+    }
+    .fa-star{
+        color: red;
+    }
+    .PD1pricediv{
+    display: flex;
+    }
+    .PD1discountprice{
+    margin:7px 5px 7px 7px;
+    font-size: 25px;
+    }
+    .PD1price{
+     font-size: 20px;
+     margin:9px 8px 8px 5px;
+     text-decoration: line-through;
+     color:rgb(113, 116, 106);
+     font-weight: bold;
+    }
+    .PDDiv3_2_off_span{
+    color:green
+    }
+    .PDlabel1{
+    background-color: green ;
+    border: none gray;
+    padding: 5px;
+    position: relative;
+    left: 53px;
+    }
+    .PDdiv3_2aside{
+    color:rgb(113, 116, 106);
+    }
+    .PDdivoffbutton{
+    display: flex;
+    }
+    .PDdivoffbutton button{
+    background-color:rgb(47, 48, 45);
+    color:lightgray;
+    border: 2px solid gray;
+    padding: 5px;
+    margin: 5px;
+    width: 150px;
+    border-radius:5px;
+    }
+    .PDDiv3_4_ button{
+    color: lightgray;
+    background-color: red;
+    padding: 5px;
+    width: 271px;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    font-size: 20px;
+    }
+    .PDdiv{
+    display: flex;
+    justify-content: center;
+    }
+    .PDbutton1,.PDbutton2,.PDbutton3{
+        border:none;
+        color: lightgrey;
+        font-size: 20px;
+        background-color:rgb(31, 26, 26);
+        padding:5px 10px 5px 10px;
+        margin: 60px;
+        cursor: pointer;
+    }
+    .PDbutton1{
+        background-color:red;
+        color:white;
+        border-radius:2px;
+        padding:5px 10px 5px 10px;
+        
+    }
+    .PDbutton2:hover,.PDbutton3:hover{ 
+        background-color:red;
+        color:white;
+        transition-delay:5ms;
+        border-radius:2px;
+    }
+    .body3{
+        display: flex;
+        font-size: 20px;
+    }
+    .B3Div1{
+           position:relative;
+           left: 60px;
+           color:rgb(113, 116, 106);
+    }
+    .B3Div2{
+        position: relative;
+        left: 250px;
+        color: lightgrey;
+    }
+    .body4heading{
+        text-align: center;
+        font-size: 23px;
+        color: lightgrey;
+    }
+
+
+    .body4{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .b4div1{
+        border: 2px solid gray;
+        margin:5px;
+        padding:5px;
+        cursor: pointer;
+    
+        .TPimg1{
+            height:200px;
+            width:200px;
+            background-color: rgba(61, 58, 56, 0.171);
+        }
+        /* justify-self: center; */         
+    }
+    .TPimgdiv{
+        text-align: center;
+        width:305px;
+        background-color: rgba(219, 207, 199, 0.171);
+    }
+    .fa-star{
+        color:red;
+        font-size: 12px;
+    }
+    .TP1pricediv{
+        display: flex;
+    }
+    .TP1discountprice{
+        margin:7px 5px 7px 7px;
+        font-size: 25px;
+        color:lightgray
+    }
+    .TP1price{
+        font-size: 20px;
+        margin:9px 8px 8px 5px;
+        text-decoration: line-through;
+        color:rgb(113, 116, 106);
+        font-weight: bold;
+    }
+    .TP1heading{
+        font-size: 30px;
+        color: lightgray;
+    }
+    .TP1aside{
+        color:rgb(113, 116, 106);
+        font-size: 25px;
+    }
+    .TPCart1{
+        color: lightgray;
+        background-color: red;
+        padding: 5px;
+        width: 271px;
+        border-radius: 5px;
+        border: none;
+        height: 40px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .TPCartDiv1{
+         text-align: center;
+    }
+    .TPcontentdiv{
+        margin:15px;
+    }
+    .b4divlast{
+        font-size: 30px;
+        text-align:center;
+        color: lightgray;
+        border: 2px solid gray;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* align-self: center; */
+        /* justify-self: center; */
+    }
+    /* .b4lastaside,.fa-arrow-right{
+        position:relative;
+        /* top:270px;  */
+        /* justify-self: center; */
+        /* place-self: center; */
+    /* } */ 
+    .b4divlastsub{
+        text-align: center;
+        /* justify-self: center; */
+        /* place-self: center; */
+    }
+
+
+footer {
+    background-color: #111; /* Darker background for footer */
+    color: #fff;
+    padding: 2rem;
+    margin-top: 2rem; /* Add some space between main content and footer */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Distribute sections evenly */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.footer-section {
+    flex: 1 1 200px; /* Each section takes up at least 200px */
+    margin-bottom: 2rem; /* Space between sections vertically */
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section form {
+    display: flex;
+}
+
+.footer-section input[type="email"] {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-section button[type="submit"] {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #333;
+}
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    margin-top: 10px; /* Add some space above the icons */
+}
+
+.social-icons a {
+    display: inline-block; /* Make each icon clickable */
+    margin: 0 5px; /* Add spacing between icons */
+    width: 30px; /* Set icon size */
+    height: 30px;
+    text-align: center; /* Center icon within its container */
+    line-height: 30px; /* Vertically center the icon */
+    border-radius: 50%; /* Make icons circular */
+    background-color: #333; /* Dark background for icons */
+    color: #fff; /* White icon color */
+    text-decoration: none; /* Remove underlines from links */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.social-icons a:hover {
+    background-color: #f00; /* Red background on hover */
+}
+
+/* Specific icon styles (using Font Awesome or similar) */
+.social-icons .fa { /* Target Font Awesome icons */
+    font-size: 16px; /* Adjust icon size */
+}
+
+/* Example for specific icons (replace with your actual icons) */
+.social-icons .fa-facebook { } /* No specific styles needed for now */
+.social-icons .fa-twitter { }
+.social-icons .fa-instagram { }
+.social-icons .fa-youtube { }
