@@ -444,21 +444,21 @@ body {
 
 .advantages-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 30px; /* Increased gap */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 30px; 
 }
 
 .advantage {
-    background-color: #111; /* Slightly darker background for advantage boxes */
-    padding: 30px; /* Increased padding */
-    border-radius: 8px; /* Slightly more rounded corners */
+    background-color: #111; 
+    padding: 30px; 
+    border-radius: 8px; 
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .advantage:hover {
-    transform: translateY(-5px); /* Move up slightly on hover */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Add a more pronounced shadow */
+    transform: translateY(-5px); 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); 
 }
 
 .advantage i {
