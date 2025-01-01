@@ -9,7 +9,7 @@
     .Top{
             display: flex;
             margin: 0px 2px 50px 1px;
-            background-color: #463f3f;
+            background-color: black;
             position: sticky;
             top: 0px;
             z-index: 10000;
@@ -161,13 +161,13 @@
         cursor: pointer;
     }
     .PDbutton1{
-        background-color:red;
+    
         color:white;
         border-radius:2px;
         padding:5px 10px 5px 10px;
         
     }
-    .PDbutton2:hover,.PDbutton3:hover{ 
+    .PDbutton1:hover,.PDbutton2:hover,.PDbutton3:hover{ 
         background-color:red;
         color:white;
         transition-delay:5ms;
@@ -274,6 +274,75 @@
     
     .b4divlastsub{
         text-align: center;
+    }
+
+
+    .our-advantages {
+        padding: 20px;
+        background-color: #222;
+        text-align:center;
+    }
+    
+    .advantages-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .advantage i {
+        font-size: 2em;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    
+    
+    .our-advantages {
+        padding: 40px; 
+        background-color: black;
+    }
+    
+    .our-advantages h2 {
+        text-align: center; 
+        margin-bottom: 30px; 
+        color:white
+    }
+    
+    .advantages-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+        gap: 30px; 
+    }
+    
+    .advantage {
+        background-color: #111; 
+        padding: 30px; 
+        border-radius: 8px; 
+        text-align: center;
+        color:white ;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    }
+    
+    .advantage:hover {
+        transform: translateY(-5px); 
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); 
+        cursor: pointer;
+    }
+    
+    .advantage i {
+        font-size: 3em; 
+        margin-bottom: 15px;
+        color: red; 
+    }
+    .anchor{
+        text-decoration: none;
+    }
+    .advantage h3 {
+        margin-bottom: 10px;
+    }
+    
+    .advantage p {
+        color: #aaa; 
     }
 
 
