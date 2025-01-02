@@ -27,6 +27,12 @@ body {
     text-align: center;
 }
 
+a{
+ text-decoration: none ;
+}
+
+
+
 .icons {
     display: flex;
     top:10px;
